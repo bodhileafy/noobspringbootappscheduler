@@ -28,9 +28,9 @@ public class BackupAblK8sLogToAlicloudOss {
                 .forEach(path -> {
                     OSS ossClient = new OSSClientBuilder().build("https://oss-ap-southeast-3-internal.aliyuncs.com",
                             "LTAI4Fuo9hrW9AjFy84p6LYa",
-                            "dyTa5r4W5noapik5CNWLDDzrPgKYfd");
+                            "dadsadsadsadsadsadsadsa");
                     PutObjectRequest putObjectRequest = new PutObjectRequest(
-                            "log-vol01",
+                            "logaaaaa",
                             path.getParent().toString().substring(1).replace("\\", "/")+"/"+id.getHostName()+"/"+path.getFileName(),
                             new File(path.toString()));
                     ossClient.putObject(putObjectRequest);
